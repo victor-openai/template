@@ -1,4 +1,4 @@
-import { Hello } from '@template/react'
+import { Hello } from '@victor-template/react'
 
 export default function App() {
   return (

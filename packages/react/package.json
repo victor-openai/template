@@ -1,5 +1,5 @@
 {
-  "name": "@template/react",
+  "name": "@victor-template/react",
   "version": "1.0.0",
   "private": false,
   "type": "module",
@@ -25,7 +25,7 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@template/core": "workspace:*"
+    "@victor-template/core": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "^19.1.12",

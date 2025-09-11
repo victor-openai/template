@@ -20,7 +20,7 @@ importers:
 
   examples/react-explorer:
     dependencies:
-      '@template/react':
+      '@victor-template/react':
         specifier: workspace:*
         version: link:../../packages/react
       react:
@@ -78,7 +78,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@template/core':
+      '@victor-template/core':
         specifier: workspace:*
         version: link:../core
       react:

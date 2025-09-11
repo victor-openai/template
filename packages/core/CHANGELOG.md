@@ -1,4 +1,4 @@
-# @template/core
+# victor-template-core
 
 ## 1.0.0
 
