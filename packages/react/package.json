@@ -1,0 +1,35 @@
+{
+  "name": "@template/react",
+  "version": "0.0.0",
+  "private": false,
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsdown build",
+    "dev": "tsdown --watch",
+    "lint": "echo 'no lint config'",
+    "test": "echo 'no tests'"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@template/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.12",
+    "tsdown": "^0.15.0",
+    "typescript": "^5.8.3"
+  }
+}
