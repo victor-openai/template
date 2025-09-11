@@ -1,5 +1,13 @@
 # @template/react
 
+## 1.0.3
+
+### Patch Changes
+
+- minor 3
+- Updated dependencies
+  - @victor-template/core@1.0.3
+
 ## 1.0.2
 
 ### Patch Changes
