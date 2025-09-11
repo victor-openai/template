@@ -1,5 +1,13 @@
 # @template/react
 
+## 1.0.4
+
+### Patch Changes
+
+- ad71e8a: bump 4
+- Updated dependencies [ad71e8a]
+  - @victor-template/core@1.0.4
+
 ## 1.0.3
 
 ### Patch Changes
