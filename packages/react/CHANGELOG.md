@@ -1,5 +1,13 @@
 # @template/react
 
+## 1.0.6
+
+### Patch Changes
+
+- 6c8ddc5: v6
+- Updated dependencies [6c8ddc5]
+  - @victor-template/core@1.0.6
+
 ## 1.0.5
 
 ### Patch Changes
