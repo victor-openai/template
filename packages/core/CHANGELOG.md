@@ -1,5 +1,11 @@
 # victor-template-core
 
+## 1.0.5
+
+### Patch Changes
+
+- 75f9a29: minor bump
+
 ## 1.0.4
 
 ### Patch Changes
