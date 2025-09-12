@@ -32,10 +32,11 @@ jobs:
           node-version: 22
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Debug npmrc
+      - name: Overwrite npmrc with auth only
         run: |
-          echo ">>> Printing npm config at /home/runner/work/_temp/.npmrc"
-          cat /home/runner/work/_temp/.npmrc || echo "No .npmrc found"
+          echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" > /home/runner/work/_temp/.npmrc
+          echo ">>> New .npmrc contents:"
+          cat /home/runner/work/_temp/.npmrc
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile=false
