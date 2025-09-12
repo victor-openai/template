@@ -1,5 +1,13 @@
 # @template/react
 
+## 1.0.5
+
+### Patch Changes
+
+- 75f9a29: minor bump
+- Updated dependencies [75f9a29]
+  - @victor-template/core@1.0.5
+
 ## 1.0.4
 
 ### Patch Changes
