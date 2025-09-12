@@ -32,6 +32,11 @@ jobs:
           node-version: 22
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Debug npmrc
+        run: |
+          echo ">>> Printing npm config at /home/runner/work/_temp/.npmrc"
+          cat /home/runner/work/_temp/.npmrc || echo "No .npmrc found"
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile=false
 
