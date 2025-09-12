@@ -9,6 +9,9 @@ on:
       - '.github/workflows/release.yml'
   workflow_dispatch:
 
+permissions:
+  id-token: write  # Required for OIDC
+
 jobs:
   release:
     runs-on: ubuntu-latest
