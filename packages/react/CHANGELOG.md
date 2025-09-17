@@ -1,5 +1,16 @@
 # @template/react
 
+## 1.0.20
+
+### Patch Changes
+
+- 18ebc70: x
+- ff2dd3a: a
+- Updated dependencies [18ebc70]
+- Updated dependencies [ff2dd3a]
+- Updated dependencies [34453a9]
+  - @victor-template/core@1.1.0
+
 ## 1.0.19
 
 ### Patch Changes
