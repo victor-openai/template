@@ -36,7 +36,6 @@ jobs:
         with:
           node-version: 22
           registry-url: "https://registry.npmjs.org"
-          scope: "@victor-template"
 
       - name: Update npm
         run: npm install -g npm@latest
