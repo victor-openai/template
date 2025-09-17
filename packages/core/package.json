@@ -1,6 +1,11 @@
 {
   "name": "@victor-template/core",
   "version": "1.0.6",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor-openai/template.git",
+    "directory": "packages/core"
+  },
   "private": false,
   "type": "module",
   "main": "dist/index.cjs",
