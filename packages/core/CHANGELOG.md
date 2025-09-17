@@ -1,5 +1,16 @@
 # victor-template-core
 
+## 1.1.0
+
+### Minor Changes
+
+- 34453a9: test
+
+### Patch Changes
+
+- 18ebc70: x
+- ff2dd3a: a
+
 ## 1.0.19
 
 ### Patch Changes
