@@ -1,5 +1,35 @@
 # victor-template-core
 
+## 1.0.14
+
+### Patch Changes
+
+- 14
+
+## 1.0.13
+
+### Patch Changes
+
+- 13
+
+## 1.0.12
+
+### Patch Changes
+
+- 12
+
+## 1.0.11
+
+### Patch Changes
+
+- 11
+
+## 1.0.10
+
+### Patch Changes
+
+- 10
+
 ## 1.0.9
 
 ### Patch Changes
