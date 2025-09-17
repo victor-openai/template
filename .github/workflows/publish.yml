@@ -15,6 +15,9 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: core
     steps:
       - name: Checkout
         uses: actions/checkout@v5
