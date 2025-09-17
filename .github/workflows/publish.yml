@@ -11,7 +11,7 @@ on:
 
 permissions:
   id-token: write # Required for OIDC
-  contents: read
+  contents: write
 
 jobs:
   publish:
@@ -38,14 +38,8 @@ jobs:
           registry-url: "https://registry.npmjs.org"
           scope: "@victor-template"
 
-      - name: Update npm
-        run: npm install -g npm@latest
-
       - name: Install dependencies
         run: pnpm install
-
-      - name: build
-        run: pnpm build
 
       - name: Create Release PR or Publish
         uses: changesets/action@v1
