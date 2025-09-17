@@ -8,7 +8,7 @@
     "lint": "pnpm -r run lint",
     "test": "pnpm -r run test",
     "type-check": "tsc --build",
-    "publish": "pnpm -r run build && changeset publish --access public"
+    "publish": "pnpm publish -r --access public"
     },
     "devDependencies": {
       "typescript": "^5.8.3",
