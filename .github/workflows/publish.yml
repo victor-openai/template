@@ -39,6 +39,9 @@ jobs:
       - name: build
         run: pnpm build
 
+      - name: Update npm
+        run: npm install -g npm@latest
+
       - name: Changeset
         uses: changesets/action@v1
         with:
