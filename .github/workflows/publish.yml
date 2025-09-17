@@ -5,39 +5,48 @@ on:
     branches:
       - main
     paths:
-      - '.changeset/**'
-      - '.github/workflows/publish.yml'
+      - ".changeset/**"
+      - ".github/workflows/publish.yml"
   workflow_dispatch:
 
 permissions:
-  id-token: write  # Required for OIDC
+  id-token: write # Required for OIDC
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
+          run_install: false
           version: 10.11.0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 22
+          always-auth: true
+          scope: "@victor-template"
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile=false
+        run: pnpm install
 
-      - name: Create Release PR or Publish
-        uses: changesets/action@v1
-        with:
-          version: pnpm ci:version
-          publish: pnpm ci:release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Create Release PR or Publish
+      #   uses: changesets/action@v1
+      #   with:
+      #     version: pnpm ci:version
+      #     publish: pnpm ci:release
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: build
+        run: pnpm build
+
+      - name: npm publish
+        run: pnpm publish --access public
