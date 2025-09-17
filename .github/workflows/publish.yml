@@ -56,5 +56,5 @@ jobs:
         run: git status
 
       - name: npm publish
-        run: pnpm publish --access public
-        # run: pnpm publish
+        # run: pnpm publish --access public
+        run: pnpm publish
