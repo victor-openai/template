@@ -8,8 +8,7 @@
     "lint": "pnpm -r run lint",
     "test": "pnpm -r run test",
     "type-check": "tsc --build",
-    "ci:version": "changeset version && pnpm install --no-frozen-lockfile",
-    "ci:release": "pnpm -r run build && changeset publish --access public"
+    "publish": "pnpm -r run build && changeset publish --access public"
     },
     "devDependencies": {
       "typescript": "^5.8.3",
