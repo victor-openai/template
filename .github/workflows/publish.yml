@@ -38,9 +38,6 @@ jobs:
           registry-url: "https://registry.npmjs.org"
           scope: "@victor-template"
 
-      - name: Configure npm auth token
-        run: npm config set //registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}
-
       - name: Install dependencies
         run: pnpm install
 
