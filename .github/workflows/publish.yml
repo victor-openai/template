@@ -11,7 +11,7 @@ on:
 
 permissions:
   id-token: write # Required for OIDC
-  contents: read
+  pull-requests: write
 
 jobs:
   publish:
@@ -31,7 +31,6 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: 22
           registry-url: "https://registry.npmjs.org"
 
       - name: Install dependencies
@@ -40,5 +39,9 @@ jobs:
       - name: build
         run: pnpm build
 
-      - name: npm publish
-        run: pnpm publish
+      - name: Changeset
+        uses: changesets/action@v1
+        with:
+          publish: pnpm release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
