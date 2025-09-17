@@ -1,5 +1,11 @@
 # victor-template-core
 
+## 1.0.9
+
+### Patch Changes
+
+- a9ca7b9: temp
+
 ## 1.0.6
 
 ### Patch Changes

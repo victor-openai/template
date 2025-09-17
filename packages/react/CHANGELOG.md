@@ -1,5 +1,13 @@
 # @template/react
 
+## 1.0.9
+
+### Patch Changes
+
+- a9ca7b9: temp
+- Updated dependencies [a9ca7b9]
+  - @victor-template/core@1.0.9
+
 ## 1.0.6
 
 ### Patch Changes
