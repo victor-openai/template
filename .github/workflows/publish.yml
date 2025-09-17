@@ -35,8 +35,8 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: 22
-          always-auth: true
-          scope: "@victor-template"
+          registry-url: "https://registry.npmjs.org"
+          # scope: "@victor-template"
 
       - name: Install dependencies
         run: pnpm install
