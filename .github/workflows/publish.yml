@@ -27,9 +27,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-          version: 10.11.0
 
       - name: Setup Node.js
         uses: actions/setup-node@v5
@@ -39,9 +36,6 @@ jobs:
 
       - name: Update npm
         run: npm install -g npm@latest
-
-      - name: Install dependencies
-        run: pnpm install
 
       - name: build
         run: pnpm build
