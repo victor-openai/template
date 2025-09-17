@@ -48,5 +48,8 @@ jobs:
       - name: build
         run: pnpm build
 
+      - name: git status
+        run: git status
+
       - name: npm publish
         run: pnpm publish --access public
