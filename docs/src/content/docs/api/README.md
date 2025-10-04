@@ -2,7 +2,7 @@
 editUrl: false
 next: false
 prev: false
-title: "@victor-template/core"
+title: "@victor-template/core-2"
 ---
 
 ## Type Aliases

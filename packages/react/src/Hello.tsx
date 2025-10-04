@@ -1,4 +1,4 @@
-import { defaultGreeting } from '@victor-template/core'
+import { defaultGreeting } from '@victor-template/core-2'
 import { JSX } from 'react'
 
 export interface HelloProps { name?: string }
