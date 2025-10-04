@@ -4,6 +4,7 @@ import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import { createStarlightTypeDocPlugin } from "starlight-typedoc";
 
+
 const [pkgStarlightTypeDoc, pkgTypeDocSidebarGroup] = createStarlightTypeDocPlugin();
 
 const typeDocConfig = {
